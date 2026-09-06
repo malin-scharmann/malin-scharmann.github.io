@@ -151,6 +151,20 @@ p:last-child {
   margin: 0 auto;
 }
 
+.nav-toggle[aria-expanded="true"] span {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 .nav-toggle span::before,
 .nav-toggle span::after {
   content: "";
