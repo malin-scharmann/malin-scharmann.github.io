@@ -585,7 +585,7 @@ p:last-child {
 .contact-visual {
   background:
     linear-gradient(180deg, rgba(80, 140, 190, 0.35), rgba(40, 70, 110, 0.42)),
-    url("/images/portrait-outdoor.jpg") center 18% / cover no-repeat;
+    url("../images/portrait-outdoor.jpg") center 18% / cover no-repeat;
   color: var(--white);
   padding: 5rem 8% 4rem;
   display: flex;

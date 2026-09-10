@@ -2,30 +2,42 @@
 
 A coded rebuild of Malin Scharmann's portfolio homepage, matching the layout, colors, type, and content from the original Wix site.
 
-This project is plain **HTML and CSS** (plus a small script for the mobile menu and contact form). Open the folder in Visual Studio or Visual Studio Code to keep editing.
+This is a GitHub project: HTML, CSS, and a small script for the mobile menu and contact form. Edit in Cursor, then commit and push to GitHub.
 
 ## Pages
 
-- `index.html` — Home: hero portraits, about, featured stories, involvement logos
-- `projects.html` — Project gallery from the original site
+- `index.html` — Home: hero, about, featured stories, involvement logos
+- `projects.html` — Project gallery
 - `resume.html` — Resume and CV previews
 - `contact.html` — Contact form
+
+## Publish on GitHub Pages
+
+After this repo is on GitHub:
+
+1. Open the repository on GitHub.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, set Source to **GitHub Actions**.
+4. The included workflow publishes the site on every push to `main`.
+5. The live URL will look like `https://<your-github-username>.github.io/<repo-name>/`.
+
+You can also serve the files from the `main` branch (root folder) if you prefer branch-based Pages instead of Actions.
 
 ## Run locally
 
 ```bash
+git clone <your-github-repo-url>
+cd <repo-name>
 npm install
 npm run dev
 ```
 
-Then open the local URL Vite prints (this repo is set to port `43123`).
-
-To open files directly in Visual Studio / VS Code without a server, start with `index.html` and `css/styles.css`. Image paths work best when the site is served with `npm run dev`.
+Then open the local URL Vite prints (port `43123`).
 
 ## Edit the look
 
-- Layout and colors live in `css/styles.css`
-- Homepage copy lives in `index.html`
-- Photos and logos live in `images/`
+- Layout and colors: `css/styles.css`
+- Homepage copy: `index.html`
+- Photos and logos: `images/`
 
-The palette follows the original site: navy `#162b6f`, peach `#f59e50`, periwinkle `#b0bfef`, and Fraunces + Assistant type.
+The palette follows the original site: navy `#162b6f`, peach `#f4b29b`, cyan `#4dc9e6`, and Fraunces + Assistant type.
