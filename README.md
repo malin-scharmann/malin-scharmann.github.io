@@ -11,23 +11,19 @@ This is a GitHub project: HTML, CSS, and a small script for the mobile menu and 
 - `resume.html` — Resume and CV previews
 - `contact.html` — Contact form
 
-## Publish on GitHub Pages
+## Live site
 
-After this repo is on GitHub:
+https://malin-scharmann.github.io/
 
-1. Open the repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, set Source to **GitHub Actions**.
-4. The included workflow publishes the site on every push to `main`.
-5. The live URL will look like `https://<your-github-username>.github.io/<repo-name>/`.
+GitHub Pages is already enabled. Every push to `main` updates that URL.
 
-You can also serve the files from the `main` branch (root folder) if you prefer branch-based Pages instead of Actions.
+A browser address has to include a domain ending such as `.github.io` or `.com`. `https://malinscharmann` by itself is not a valid web address. The closest name on this GitHub account is the live link above.
 
 ## Run locally
 
 ```bash
-git clone <your-github-repo-url>
-cd <repo-name>
+git clone https://github.com/malin-scharmann/malin-scharmann.github.io.git
+cd malin-scharmann.github.io
 npm install
 npm run dev
 ```
