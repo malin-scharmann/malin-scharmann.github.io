@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Malin Scharmann</title>
+    <title>Work | Malin Scharmann</title>
     <meta name="description" content="Malin Scharmann" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
     <link rel="icon" href="images/logo.png" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body data-page="home">
+  <body data-page="work">
     <a class="skip-link" href="#main">Skip to Content</a>
     <header class="site-header">
       <div class="header-inner">
@@ -24,9 +24,9 @@
         </button>
         <nav class="site-nav" id="site-nav" data-site-nav>
           <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="has-submenu" data-submenu>
-              <a href="work.html">Work</a>
+              <a href="work.html" aria-current="page">Work</a>
               <button class="submenu-toggle" type="button" data-submenu-toggle aria-expanded="false" aria-controls="work-submenu" aria-label="Work filters">
                 <span class="chevron"></span>
               </button>
@@ -45,7 +45,14 @@
     </header>
 
     <main id="main" class="page">
-      <h1>Home</h1>
+      <h1>Work</h1>
+      <nav class="work-filters" aria-label="Work filters">
+        <ul>
+          <li><a href="work.html?filter=ux-ui" data-filter="ux-ui">UX/UI</a></li>
+          <li><a href="work.html?filter=web-marketing" data-filter="web-marketing">Web &amp; marketing</a></li>
+          <li><a href="work.html?filter=studio" data-filter="studio">Studio</a></li>
+        </ul>
+      </nav>
     </main>
     <script type="module" src="js/main.js"></script>
   </body>

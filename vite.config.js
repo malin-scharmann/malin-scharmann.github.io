@@ -16,9 +16,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        projects: resolve(__dirname, "projects.html"),
+        work: resolve(__dirname, "work.html"),
+        about: resolve(__dirname, "about.html"),
         resume: resolve(__dirname, "resume.html"),
         contact: resolve(__dirname, "contact.html"),
+        projects: resolve(__dirname, "projects.html"),
       },
     },
   },

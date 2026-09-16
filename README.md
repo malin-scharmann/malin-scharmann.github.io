@@ -1,23 +1,23 @@
-# Malin Scharmann's Portfolio
+# Malin Scharmann
 
-A coded rebuild of Malin Scharmann's portfolio homepage, matching the layout, colors, type, and content from the original Wix site.
-
-This is a GitHub project: HTML, CSS, and a small script for the mobile menu and contact form. Edit in Cursor, then commit and push to GitHub.
+GitHub Pages site for [malinscharmann.com](https://malinscharmann.com). HTML, CSS, and a small script for the header menu and Work filters.
 
 ## Pages
 
-- `index.html` — Home: hero, about, featured stories, involvement logos
-- `projects.html` — Project gallery
-- `resume.html` — Resume and CV previews
-- `contact.html` — Contact form
+- `index.html` — Home
+- `work.html` — Work (filters: UX/UI, Web & marketing, Studio)
+- `about.html` — About
+- `resume.html` — Resume
+- `contact.html` — Contact
+- `projects.html` — Redirects to Work
+
+Header: **Home · Work · About · Resume · Contact**. Work opens on UX/UI.
 
 ## Live site
 
-https://malin-scharmann.github.io/
+https://malinscharmann.com
 
-GitHub Pages is already enabled. Every push to `main` updates that URL.
-
-A browser address has to include a domain ending such as `.github.io` or `.com`. `https://malinscharmann` by itself is not a valid web address. The closest name on this GitHub account is the live link above.
+Every push to `main` deploys via GitHub Pages.
 
 ## Run locally
 
@@ -29,11 +29,3 @@ npm run dev
 ```
 
 Then open the local URL Vite prints (port `43123`).
-
-## Edit the look
-
-- Layout and colors: `css/styles.css`
-- Homepage copy: `index.html`
-- Photos and logos: `images/`
-
-The palette follows the original site: navy `#162b6f`, peach `#f4b29b`, cyan `#4dc9e6`, and Fraunces + Assistant type.
