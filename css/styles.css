@@ -313,6 +313,193 @@ a {
   margin: 0;
 }
 
+/* Home hero — layout and display size from the approved mockup */
+body[data-page="home"] {
+  background-color: var(--color-bg);
+  background-image: url("../images/home-gradient.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.home-hero {
+  position: relative;
+  min-height: calc(100svh - var(--header-height) - 1.7rem);
+  display: flex;
+  align-items: stretch;
+}
+
+.home-hero-layout {
+  position: relative;
+  width: 100%;
+  padding: 0 6.3vw;
+  box-sizing: border-box;
+  min-height: calc(100svh - var(--header-height) - 1.7rem);
+}
+
+.home-name {
+  position: absolute;
+  left: 6.3vw;
+  top: 16%;
+  margin: 0;
+  z-index: 4;
+  font-family: var(--font-sans);
+  font-size: var(--text-h1);
+  font-weight: 400;
+  line-height: 1.22;
+  color: var(--color-text);
+}
+
+.home-role {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  line-height: 0.9;
+}
+
+.home-uxui,
+.home-designer {
+  position: absolute;
+  z-index: 3;
+  font-size: clamp(2.75rem, 7.55vw, 7rem);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+
+.home-uxui {
+  left: 6.5vw;
+  top: 39%;
+}
+
+.home-designer {
+  left: 54.8%;
+  top: 38.2%;
+}
+
+.home-tagline {
+  position: absolute;
+  left: 60.5%;
+  top: 56.5%;
+  z-index: 4;
+  width: min(21.5rem, 32%);
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-h5);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text);
+}
+
+.home-figure {
+  position: absolute;
+  left: 18%;
+  top: 0;
+  width: 46%;
+  height: 100%;
+  z-index: auto;
+  pointer-events: none;
+}
+
+.home-brush {
+  position: absolute;
+  left: -4%;
+  top: 0;
+  width: 108%;
+  height: auto;
+  display: block;
+  z-index: 0;
+}
+
+.home-cutout {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  height: 98%;
+  width: auto;
+  max-width: none;
+  display: block;
+  object-fit: contain;
+  object-position: center bottom;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    min-height: 0;
+  }
+
+  .home-hero-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 1.25rem 1.5rem 3.5rem;
+  }
+
+  .home-name,
+  .home-uxui,
+  .home-designer,
+  .home-tagline,
+  .home-figure {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+  }
+
+  .home-role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    margin: 0.35rem 0 0.85rem;
+  }
+
+  .home-name {
+    order: 0;
+    margin-bottom: 0.35rem;
+  }
+
+  .home-figure {
+    order: 1;
+    width: min(22rem, 92%);
+    aspect-ratio: 4 / 5;
+    align-self: center;
+    margin: 0.5rem 0 1rem;
+  }
+
+  .home-brush {
+    left: -6%;
+    top: 4%;
+    width: 112%;
+  }
+
+  .home-cutout {
+    left: 8%;
+    height: 100%;
+  }
+
+  .home-role {
+    order: 2;
+  }
+
+  .home-uxui,
+  .home-designer {
+    font-size: clamp(2.4rem, 14vw, 4.2rem);
+  }
+
+  .home-tagline {
+    order: 3;
+    width: min(28rem, 100%);
+    margin-top: 0.85rem;
+  }
+}
+
 .work-filters {
   margin-top: 1.75rem;
 }
