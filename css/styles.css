@@ -1,9 +1,19 @@
 :root {
-  --ink: #111111;
-  --muted: #5a5a5a;
-  --paper: #ffffff;
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --font-sans: "Golane", "Outfit", "Avenir Next", "Century Gothic", Futura, sans-serif;
+  --text-body: 16px;
+  --text-h1: 48.8px;
+  --text-h2: 39.1px;
+  --text-h3: 31.3px;
+  --text-h4: 25px;
+  --text-h5: 20px;
+  --font-weight-bold: 700;
+  --nav-hover: #1565c0;
   --line: #e8e8e8;
-  --blue: #1565c0;
+  --ink: var(--color-text);
+  --paper: var(--color-bg);
+  --blue: var(--nav-hover);
   --site-width: 1120px;
   --header-height: 72px;
 }
@@ -21,12 +31,46 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  color: var(--ink);
-  background: var(--paper);
-  font-family: "Assistant", "Segoe UI", sans-serif;
-  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  /* Golane is the brand face; Outfit is a temporary geometric sans until a web license/files exist. */
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  line-height: 1.15;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: var(--text-h4);
+}
+
+h5 {
+  font-size: var(--text-h5);
 }
 
 a {
@@ -67,9 +111,9 @@ a {
 
 .brand {
   text-decoration: none;
-  color: var(--ink);
-  font-weight: 700;
-  font-size: 1.05rem;
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-body);
   letter-spacing: 0.01em;
 }
 
@@ -139,10 +183,10 @@ a {
 
 .site-nav a,
 .submenu-toggle {
-  color: var(--ink);
+  color: var(--color-text);
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: var(--text-body);
+  font-weight: 400;
   letter-spacing: 0.03em;
   background: none;
   border: 0;
@@ -242,10 +286,6 @@ a {
 
 .page h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
 }
 
 .work-filters {
@@ -267,10 +307,10 @@ a {
   min-height: 44px;
   padding: 0.2rem 0.85rem 0.2rem 0;
   margin-right: 1.1rem;
-  color: var(--ink);
+  color: var(--color-text);
   text-decoration: none;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: var(--text-body);
+  font-weight: 400;
   letter-spacing: 0.03em;
 }
 
