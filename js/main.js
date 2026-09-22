@@ -14,39 +14,6 @@ if (navToggle && siteNav) {
   });
 }
 
-const submenu = document.querySelector("[data-submenu]");
-const submenuToggle = document.querySelector("[data-submenu-toggle]");
-
-function setSubmenuOpen(open) {
-  if (!submenu || !submenuToggle) return;
-  submenu.classList.toggle("is-open", open);
-  submenuToggle.setAttribute("aria-expanded", String(open));
-}
-
-if (submenu && submenuToggle) {
-  submenuToggle.addEventListener("click", (event) => {
-    event.preventDefault();
-    const open = submenuToggle.getAttribute("aria-expanded") !== "true";
-    setSubmenuOpen(open);
-  });
-
-  document.addEventListener("click", (event) => {
-    if (!submenu.contains(event.target)) setSubmenuOpen(false);
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      const wasOpen = submenu.classList.contains("is-open");
-      setSubmenuOpen(false);
-      if (wasOpen) submenuToggle.focus();
-    }
-  });
-
-  submenu.addEventListener("focusout", (event) => {
-    if (!submenu.contains(event.relatedTarget)) setSubmenuOpen(false);
-  });
-}
-
 function normalizeFilter(value) {
   const key = String(value || "")
     .trim()
