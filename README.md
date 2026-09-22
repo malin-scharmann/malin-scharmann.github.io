@@ -13,7 +13,7 @@ GitHub Pages site for [malinscharmann.com](https://malinscharmann.com). HTML, CS
 
 Header: **Home · Work · About · Resume · Contact**. Work opens on UX/UI. Portrait in the sticky rounded nav bar.
 
-Type: Golane is the brand face but is not licensed for the web here yet. The live site uses **Outfit** as a temporary geometric sans (white background, black text, H1 48.8px bold).
+Type: **Outfit** (self-hosted woff2). White background, black text, H1 48.8px bold.
 
 ## Live site
 
