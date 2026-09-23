@@ -41,7 +41,8 @@
       </div>
     </header>
 
-    <main id="main" class="home-hero">
+    <main id="main">
+      <section class="home-hero" aria-label="Introduction">
       <div class="home-hero-layout">
         <p class="home-name">Malin<br />Scharmann</p>
         <h1 class="home-role">
@@ -54,6 +55,50 @@
           <img class="home-cutout" src="images/home-portrait-cutout.png" alt="" />
         </div>
       </div>
+      </section>
+
+      <section class="recent-work" aria-labelledby="recent-work-heading">
+        <div class="recent-work-inner">
+          <h2 id="recent-work-heading">My Recent Work</h2>
+          <ul class="recent-work-list">
+            <li>
+              <a class="work-card work-card--hearthaven" href="work.html?filter=ux-ui">
+                <div class="work-card-visual" aria-hidden="true">
+                  <img class="work-phone work-phone--a" src="images/recent-work/hearthaven-phone-a.png" alt="" width="193" height="435" />
+                  <img class="work-phone work-phone--b" src="images/recent-work/hearthaven-phone-b.png" alt="" width="199" height="393" />
+                </div>
+                <div class="work-card-copy">
+                  <h3>Heart Haven</h3>
+                  <p>Mental &amp; Emotional Health Support App Casestudy</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="work-card work-card--munchmap" href="work.html?filter=ux-ui">
+                <div class="work-card-visual" aria-hidden="true">
+                  <img class="work-munchmap" src="images/recent-work/munchmap.png" alt="" width="354" height="367" />
+                </div>
+                <div class="work-card-copy">
+                  <h3>MunchMap</h3>
+                  <p>Digital Cookbook &amp; Grocery App Casestudy</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="work-card work-card--beaver" href="work.html?filter=ux-ui">
+                <div class="work-card-visual" aria-hidden="true">
+                  <img class="work-beaver-website" src="images/recent-work/beaver-website.png" alt="" width="323" height="422" />
+                  <img class="work-beaver-app" src="images/recent-work/beaver-app.png" alt="" width="142" height="280" />
+                </div>
+                <div class="work-card-copy">
+                  <h3>Beaver Mountain App</h3>
+                  <p>Ski Resort App Design based on Website Casestudy</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <script type="module" src="js/main.js"></script>
   </body>
